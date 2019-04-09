@@ -1,18 +1,14 @@
-/**
- * @author Administrator
- */
-/**
- * @author Administrator
- *
- */
-package com.diditest;
+package com.example.email;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class TestDidi {
+public class EmailApplication {
+
     public static void main(String[] args) {
-        SpringApplication.run(TestDidi.class, args);
+
+        SpringApplication.run(EmailApplication.class, args);
     }
+
 }

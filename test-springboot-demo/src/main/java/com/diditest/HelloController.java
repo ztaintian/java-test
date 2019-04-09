@@ -1,5 +1,5 @@
 /**
- * 
+ * @author Administrator
  */
 /**
  * @author Administrator
@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HelloController {
-	 @RequestMapping("/hello1")
-	 public void index(@RequestParam("nameId") String nameId) {
-		 System.out.println(nameId);
-	 }
+    @RequestMapping("/hello1")
+    public void index(@RequestParam("nameId") String nameId) {
+        System.out.println(nameId);
+    }
 }
