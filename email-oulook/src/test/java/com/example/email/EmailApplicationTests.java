@@ -24,7 +24,7 @@ public class EmailApplicationTests {
         message.setFrom("zhutiantian2019@outlook.com");
         message.setTo("zhutiantian2019@outlook.com");
         message.setSubject("主题：简单邮件");
-        message.setText("测试邮件内容");
+        message.setText("测试邮件内容222");
         mailSender.send(message);
     }
 }
