@@ -1,8 +1,5 @@
 package com.example.firsttest.modules;
 
-import java.io.Serializable;
-import java.util.List;
-
 public class Person {
     private String name;
     private String sex;
