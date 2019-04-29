@@ -8,15 +8,15 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class TestController {
+public class FindController {
     //替换成自己生成的mapper
     @Autowired
     @Qualifier("userMapper")
     private UserMapper userMapper;
 
-    @RequestMapping("/test")
+    @RequestMapping("/find")
     @ResponseBody
-    public Object test(){
+    public Object find(){
         //查询该表的所有数据
         return userMapper.selectByExample(null);
     }

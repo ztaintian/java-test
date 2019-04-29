@@ -1,45 +1,45 @@
 
 spring:
     datasource:
-        # Èç¹û´æÔÚ¶à¸öÊý¾ÝÔ´£¬¼à¿ØµÄÊ±ºò¿ÉÒÔÍ¨¹ýÃû×ÖÀ´Çø·Ö¿ªÀ´
+        # ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô´ï¿½ï¿½ï¿½ï¿½Øµï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¿ï¿½ï¿½ï¿½
         name: mysql
-        # Á¬½ÓÊý¾Ý¿âµÄurl
+        # ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý¿ï¿½ï¿½url
         url: jdbc:mysql://localhost:3306/test_schema?characterEncoding=utf-8&serverTimezone=UTC
-        # Á¬½ÓÊý¾Ý¿âµÄÕËºÅ
+        # ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý¿ï¿½ï¿½ï¿½Ëºï¿½
         username: root
-        #  Á¬½ÓÊý¾Ý¿âµÄÃÜÂë
-        password: qwer1234
-        # Ê¹ÓÃdruidÊý¾ÝÔ´
+        #  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        password: password
+        # Ê¹ï¿½ï¿½druidï¿½ï¿½ï¿½ï¿½Ô´
         type: com.alibaba.druid.pool.DruidDataSource
-        # À©Õ¹²å¼þ
-        # ¼à¿ØÍ³¼ÆÓÃµÄfilter:stat ÈÕÖ¾ÓÃµÄfilter:log4j ·ÀÓùsql×¢ÈëµÄfilter:wall
+        # ï¿½ï¿½Õ¹ï¿½ï¿½ï¿½
+        # ï¿½ï¿½ï¿½Í³ï¿½ï¿½ï¿½Ãµï¿½filter:stat ï¿½ï¿½Ö¾ï¿½Ãµï¿½filter:log4j ï¿½ï¿½ï¿½ï¿½sql×¢ï¿½ï¿½ï¿½filter:wall
         filters: stat
-        # ×î´óÁ¬½Ó³ØÊýÁ¿
+        # ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó³ï¿½ï¿½ï¿½ï¿½ï¿½
         maxActive: 20
-        # ³õÊ¼»¯Ê±½¨Á¢ÎïÀíÁ¬½ÓµÄ¸öÊý¡£³õÊ¼»¯·¢ÉúÔÚÏÔÊ¾µ÷ÓÃinit·½·¨£¬»òÕßµÚÒ»´ÎgetConnectionÊ±
+        # ï¿½ï¿½Ê¼ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÓµÄ¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½initï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ßµï¿½Ò»ï¿½ï¿½getConnectionÊ±
         initialSize: 1
-        # »ñÈ¡Á¬½ÓÊ±×î´óµÈ´ýÊ±¼ä£¬µ¥Î»ºÁÃë
+        # ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½È´ï¿½Ê±ï¿½ä£¬ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½
         maxWait: 60000
-        # ×îÐ¡Á¬½Ó³ØÊýÁ¿
+        # ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½Ó³ï¿½ï¿½ï¿½ï¿½ï¿½
         minIdle: 1
         timeBetweenEvictionRunsMillis: 60000
-        # Á¬½Ó±£³Ö¿ÕÏÐ¶ø²»±»ÇýÖðµÄ×î³¤Ê±¼ä
+        # ï¿½ï¿½ï¿½Ó±ï¿½ï¿½Ö¿ï¿½ï¿½Ð¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½î³¤Ê±ï¿½ï¿½
         minEvictableIdleTimeMillis: 300000
-        # ÓÃÀ´¼ì²âÁ¬½ÓÊÇ·ñÓÐÐ§µÄsql£¬ÒªÇóÊÇÒ»¸ö²éÑ¯Óï¾ä
-        # Èç¹ûvalidationQueryÎªnull£¬testOnBorrow¡¢testOnReturn¡¢testWhileIdle¶¼²»»áÆä×÷ÓÃ
+        # ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½Ð§ï¿½ï¿½sqlï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½
+        # ï¿½ï¿½ï¿½validationQueryÎªnullï¿½ï¿½testOnBorrowï¿½ï¿½testOnReturnï¿½ï¿½testWhileIdleï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         validationQuery: select count(1) from 'table'
-        # ÉêÇëÁ¬½ÓµÄÊ±ºò¼ì²â£¬Èç¹û¿ÕÏÐÊ±¼ä´óÓÚtimeBetweenEvictionRunsMillis£¬Ö´ÐÐvalidationQuery¼ì²âÁ¬½ÓÊÇ·ñÓÐÐ§
+        # ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Óµï¿½Ê±ï¿½ï¿½ï¿½â£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½timeBetweenEvictionRunsMillisï¿½ï¿½Ö´ï¿½ï¿½validationQueryï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½Ð§
         testWhileIdle: true
-        # ÉêÇëÁ¬½ÓÊ±Ö´ÐÐvalidationQuery¼ì²âÁ¬½ÓÊÇ·ñÓÐÐ§£¬×öÁËÕâ¸öÅäÖÃ»á½µµÍÐÔÄÜ
+        # ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±Ö´ï¿½ï¿½validationQueryï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½Ð§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã»á½µï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         testOnBorrow: false
-        # ¹é»¹Á¬½ÓÊ±Ö´ÐÐvalidationQuery¼ì²âÁ¬½ÓÊÇ·ñÓÐÐ§£¬×öÁËÕâ¸öÅäÖÃ»á½µµÍÐÔÄÜ
+        # ï¿½é»¹ï¿½ï¿½ï¿½ï¿½Ê±Ö´ï¿½ï¿½validationQueryï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½Ð§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã»á½µï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         testOnReturn: false
-        # ÊÇ·ñ»º´æpreparedStatement£¬¼´PSCache
+        # ï¿½Ç·ñ»º´ï¿½preparedStatementï¿½ï¿½ï¿½ï¿½PSCache
         poolPreparedStatements: false
-        # ÒªÆôÓÃPSCache£¬±ØÐëÅäÖÃ´óÓÚ0£¬µ±´óÓÚ0Ê±£¬poolPreparedStatements×Ô¶¯´¥·¢ÐÞ¸ÄÎªtrue
+        # Òªï¿½ï¿½ï¿½ï¿½PSCacheï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½0ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½0Ê±ï¿½ï¿½poolPreparedStatementsï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Þ¸ï¿½Îªtrue
         maxOpenPreparedStatements: -1
 mybatis:
-    # mapper.xml°üµØÖ·
+    # mapper.xmlï¿½ï¿½ï¿½ï¿½Ö·
     mapper-locations: classpath:mapper/*.xml
-    # pojoÉú³É°üµØÖ·
+    # pojoï¿½ï¿½ï¿½É°ï¿½ï¿½ï¿½Ö·
     type-aliases-package: com.spring.demo.mybatis.mybatis.po
