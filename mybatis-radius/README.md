@@ -1,5 +1,6 @@
 ##generator 配置#
-####1、修改application.yml
+
+1、修改application.yml
 
     spring:
       datasource:
@@ -47,7 +48,7 @@
         type-aliases-package: com.spring.demo.mybatis.mybatis.po
   
   
-####2、generator 下新建generator.properties 
+2、generator 下新建generator.properties 
 
     # 请手动配置以下选项
     # 数据库驱动:选择你的本地硬盘上面的数据库驱动包
@@ -63,6 +64,6 @@
     ### 生成Mapper的包名位置 位于src/main/resources目录下
     mapperTargetPackage=mapper
 
-####3、命令：
+3、命令：
 
     mvn mybatis-generator:generate
