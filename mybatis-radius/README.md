@@ -48,7 +48,7 @@
         type-aliases-package: com.spring.demo.mybatis.mybatis.po
   
   
-2、generator 下新建generator.properties 
+ 2、generator 下新建generator.properties 
 
     # 请手动配置以下选项
     # 数据库驱动:选择你的本地硬盘上面的数据库驱动包
