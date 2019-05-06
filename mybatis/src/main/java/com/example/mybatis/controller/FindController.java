@@ -4,7 +4,7 @@ import com.example.mybatis.mybatis.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -15,9 +15,12 @@ public class FindController {
     private UserMapper userMapper;
 
     @RequestMapping("/find")
-    @ResponseBody
-    public Object find(){
+    public Object find(@RequestParam("id") Integer id){
         //查询该表的所有数据
-        return userMapper.selectByExample(null);
+        if (id == null) {
+            return userMapper.selectByExample(null); 
+        } else {
+            return userMapper.selectByPrimaryKey(id);
+        }
     }
 }
