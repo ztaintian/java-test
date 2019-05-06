@@ -1,4 +1,4 @@
-##generator 配置#
+##generator 配置
 
 1、修改application.yml
 
