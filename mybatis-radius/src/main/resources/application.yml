@@ -42,3 +42,9 @@ mybatis:
   mapper-locations: classpath:mapper/*.xml
   # pojo生成包地址
   type-aliases-package: com.spring.demo.mybatis.mybatis.po
+#pagehelper分页插件
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
